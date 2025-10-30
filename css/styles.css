@@ -96,3 +96,48 @@ text-align: center;
 margin-top: 10px;
 }
 
+/* Tablet Styles */
+
+@media (min-width: 768px){
+   
+    nav {
+        padding: 20px;
+    }
+   
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        width: 150px;
+        border-radius: 10px;
+    }
+
+    #multi_col {
+        display: flex;
+    }
+
+    .col {
+        width: 50%;
+    }
+    .col_text {
+        margin-top: 60px;
+    }
+
+    .column img {
+        width: 40%;
+    }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+   nav li a {
+    background-color: #B77466;
+   }
+   
+    #container {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
