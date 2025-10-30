@@ -55,6 +55,7 @@ nav li a {
     font-weight: bold;
     text-decoration: none;
     color: #B77466;
+    border-bottom: 4px solid #957C62;
 }
 
 header {
@@ -135,9 +136,21 @@ margin-top: 10px;
    nav li a {
     background-color: #B77466;
    }
+
+   nav li a:hover {
+    border-bottom: 4px solid #957C62;
+   }
    
     #container {
         width: 75%;
         margin: 0 auto;
+    }
+
+    #lower_area{
+        display: flex;
+    }
+
+    .column img {
+        width: 75%;
     }
 }
