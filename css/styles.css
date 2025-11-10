@@ -1,56 +1,131 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f9; /* Change this HEX value for background */
-}
-
-.main-nav ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #333; /* Change this HEX value for navbar */
-}
-
-.main-nav ul li {
-    display: inline;
-    padding: 10px;
-}
-
-.main-nav ul li a {
-    color: white;
-    text-decoration: none;
+    background-color: #fff;
+    color: #333;
 }
 
 header, footer {
-    background-color: #6E103E; /* Change this HEX value for header/footer */
-    color: #6E103E;
-    text-align: center;
+    background-color: #333;
+    color: #fff;
     padding: 1em 0;
-}
-
-.image-container {
     text-align: center;
-    margin: 20px 0;
 }
 
-.columns {
+main {
+    padding: 1em;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #eee;
+    padding: 2em;
+    text-align: center;
+}
+
+/* Content Section (Columns) */
+#content {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    gap: 1em; /* Space between columns */
 }
 
 .column {
-    flex: 1;
-    padding: 10px;
-    min-width: 200px;
-    max-width: 500px;
+    flex: 1; /* Each column takes up equal space */
+    min-width: 300px; /* Minimum width for each column */
+    padding: 1em;
+    border: 1px solid #ccc;
 }
 
+/* Image Section */
+#images {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.image-grid img {
+    width: 300px;  /* Adjust as needed */
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+/* Hex Code Section */
+#hex-codes {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.hex-code-example {
+    padding: 1em;
+    margin: 1em auto;
+    width: 200px; /* Adjust as needed */
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+
 /* Responsive Design */
-@media (max-width: 768px) {
-    .columns {
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav ul {
         flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0.5em 0;
+    }
+
+    #content {
+        flex-direction: column; /* Stack columns on mobile */
+    }
+
+    .column {
+        min-width: auto; /* Allow columns to take full width */
+    }
+    .image-grid img {
+        width: 100%; /* Make images responsive on small screens */
     }
 }
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    /* Adjustments for tablet view if needed */
+    #content {
+        flex-direction: row; /* Keep columns side-by-side on tablet */
+    }
+    .image-grid img {
+        width: 45%; /* Adjust image size for tablet */
+    }
+
+}
+
+/* Desktop (Larger screens) - No specific changes needed for this example */

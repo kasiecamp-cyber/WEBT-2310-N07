@@ -1,63 +1,65 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Business Website - Home</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">BizCo</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button id="nav-toggle" aria-label="Toggle Navigation">
-        ☰
-      </button>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1>Hobbies</h1>
-      <p>My Hobbies</p>
-      <img src="images/konstantin-dyadyun-UF2-gL3q-38-unsplash.jpg" alt="My Hobbies" />
-    </section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="content two-column">
-      <div>
-        <h2>Hobbies</h2>
-        <p>
-          These are the things I do in my free time
-        </p>
-      </div>
-    </section>
+    <main>
+        <section id="hero">
+            <h1>Welcome!</h1>
+            <p>A simple responsive website layout.</p>
+        </section>
 
-    <section class="images-row">
-      <img src="images/Caustic xbox banner.jpeg" alt="Team Working" />
-      <img src="images/Media copy 3.jpeg" alt="Business Meeting" />
-      <img src="images/Screenshot 2025-10-22 at 10.47.55 AM.png" alt="Technology" />
-    </section>
-  </main>
+        <section id="content">
+            <div class="column">
+                <h2>Column 1</h2>
+                <p>This is the content for the first column. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="column">
+                <h2>Column 2</h2>
+                <p>This is the content for the second column. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2024 Kasie Campbell.</p>
-  </footer>
+        <section id="images">
+            <h2>Images</h2>
+            <div class="image-grid">
+                <img src="https://via.placeholder.com/300x200" alt="Image 1">
+                <img src="https://via.placeholder.com/300x200" alt="Image 2">
+                <img src="https://via.placeholder.com/300x200" alt="Image 3">
+                <img src="https://via.placeholder.com/300x200" alt="Image 4">
+            </div>
+        </section>
 
-  <script>
-    // Mobile nav toggle
-    const navToggle = document.getElementById('nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
+        <section id="hex-codes">
+            <h2>Hex Codes</h2>
+            <div class="hex-code-example" style="background-color: #f0f0f0;">
+                #f0f0f0 (Light Gray)
+            </div>
+            <div class="hex-code-example" style="background-color: #336699;">
+                #336699 (Dark Blue)
+            </div>
+        </section>
+    </main>
 
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-active');
-    });
-  </script>
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+
 </body>
 </html>
