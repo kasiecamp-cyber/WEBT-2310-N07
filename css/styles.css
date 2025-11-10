@@ -24,7 +24,7 @@ body {
 
 header, footer {
     background-color: #6E103E; /* Change this HEX value for header/footer */
-    color: white;
+    color: #6E103E;
     text-align: center;
     padding: 1em 0;
 }
