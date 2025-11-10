@@ -1,146 +1,156 @@
-/* style.css */
-:root {
-  --primary-color: #1a73e8; /* blue */
-  --secondary-color: #fbbc05; /* yellow */
-  --background-color: #ffffff;
-  --text-color: #202124;
-  --nav-background: var(--primary-color);
-  --nav-text-color: #ffffff;
-  --image-border-color: #ccc;
-}
-
+/* Global Styles */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    background-color: #FFE1AF;
 }
 
-/* Navigation */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--nav-background);
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+img {display: block;
+width: 100%;
+margin: 0% auto;
+} 
+
+nav, header, section, footer {
+    background-color: #957C62;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: var(--nav-text-color);
+/* Mobile Styles */
+
+#container {
+    margin: 10px;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+p {
+    margin: 10px;
+    padding: 10px;
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: var(--nav-text-color);
-  font-weight: 600;
-  transition: color 0.3s ease;
+h1, h2, h3, h4 {
+    text-align: center;
 }
 
-.nav-links li a:hover,
-.nav-links li a.active {
-  color: var(--secondary-color);
+nav {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
 }
 
-/* Mobile menu button */
-#nav-toggle {
-  display: none;
-  font-size: 1.8rem;
-  background: none;
-  border: none;
-  color: var(--nav-text-color);
-  cursor: pointer;
+nav ul {
+    list-style-type: none;
 }
 
-/* Images section */
-
-.images-section {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.images-section h2 {
-  margin-bottom: 1.5rem;
-  color: var(--primary-color);
-}
-
-/* Responsive 3-column image grid */
-.images-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.images-grid img {
-  width: 100%;
-  height: auto;
-  border: 3px solid var(--image-border-color);
-  border-radius: 8px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.images-grid img:hover {
-  transform: scale(1.05);
-  border-color: var(--secondary-color);
-}
-
-/* Responsive */
-
-@media (max-width: 900px) {
-  .images-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  #nav-toggle {
+nav li {
     display: block;
-  }
-  .nav-links {
-    position: absolute;
-    top: 58px;
-    right: 0;
-    background-color: var(--nav-background);
-    width: 200px;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 0;
-    gap: 1rem;
-    display: none;
-    border-radius: 0 0 0 10px;
-  }
+}
 
-  .nav-links.nav-active {
-    display: flex;
-  }
+nav li a {
+    display: block;
+    background-color: #E2B59A;
+    margin: 10px 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #B77466;
+    border-bottom: 4px solid #957C62;
+}
 
-  .nav-links li {
-    width: 100%;
-    padding-left: 1.5rem;
-  }
+header {
+    padding: 20px;
+}
 
-  .images-grid {
-    grid-template-columns: 1fr;
-  }
+section {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#multi_col {
+    background-color: #957C62;
+}
+
+.col {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#lower_area {
+    background-color: #957C62;
+    padding: 10px;
+}
+
+.column {
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 4px solid #E2B59A;
+}
+
+.column img {
+    width: 75%;
+}
+
+footer {
+    padding: 40px 0;
+text-align: center;
+margin-top: 10px;
+}
+
+/* Tablet Styles */
+
+@media (min-width: 768px){
+   
+    nav {
+        padding: 20px;
+    }
+   
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        width: 150px;
+        border-radius: 10px;
+    }
+
+    #multi_col {
+        display: flex;
+    }
+
+    .col {
+        width: 50%;
+    }
+    .col_text {
+        margin-top: 60px;
+    }
+
+    .column img {
+        width: 40%;
+    }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+   nav li a {
+    background-color: #FFE1AF;
+   }
+
+   nav li a:hover {
+    border-bottom: 4px solid #957C62;
+   }
+   
+    #container {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    #lower_area{
+        display: flex;
+    }
+
+    .column img {
+        width: 75%;
+    }
 }
