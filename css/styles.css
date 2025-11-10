@@ -1,65 +1,126 @@
-/* General Styles */
+/* Reset and General Styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #6E103E;
-    color: #35081E;
+    background-color: #ecf0f1; /* Light Gray */
+    color: #2c3e50; /* Dark Blue */
+    line-height: 1.6;
 }
 
-header, footer {
-    background-color: #35081E;
-    color: #35081E;
+/* Header and Navigation */
+header {
+    background-color: #2c3e50; /* Dark Blue */
+    color: #fff;
     padding: 1em 0;
-    text-align: center;
 }
 
-main {
-    padding: 1em;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
 }
 
-/* Navigation */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
 }
 
 nav li {
-    margin: 0 1em;
+    margin: 0 1.5em;
 }
 
 nav a {
-    color: #35081E;
+    color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    color: #3498db; /* Light Blue */
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section */
 #hero {
-    background-color: #35081E;
-    padding: 2em;
     text-align: center;
+    background-color: #3498db; /* Light Blue */
+    color: #fff;
+    padding: 4em 2em;
+    border-radius: 12px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+#hero .hero-text {
+    font-size: 1.2em;
+    color: #ecf0f1;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c0392b; /* Darker Red */
 }
 
 /* Content Section (Columns) */
 #content {
     display: flex;
-    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
-    gap: 1em; /* Space between columns */
+    flex-wrap: wrap;
+    gap: 2em;
 }
 
 .column {
-    flex: 1; /* Each column takes up equal space */
-    min-width: 300px; /* Minimum width for each column */
-    padding: 1em;
-    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 300px;
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.column h2 {
+    margin-bottom: 0.8em;
+    color: #2c3e50;
 }
 
 /* Image Section */
 #images {
-    margin-top: 2em;
     text-align: center;
 }
 
@@ -67,37 +128,55 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .image-grid img {
-    width: 300px;  /* Adjust as needed */
+    width: 300px;
     height: auto;
-    border: 1px solid #35081E;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
 }
 
 /* Hex Code Section */
 #hex-codes {
-    margin-top: 2em;
     text-align: center;
 }
 
 .hex-code-example {
     padding: 1em;
     margin: 1em auto;
-    width: 200px; /* Adjust as needed */
+    width: 200px;
     text-align: center;
-    border: 1px solid #35081E;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
 
 /* Responsive Design */
-
-/* Mobile */
-@media (max-width: 600px) {
-    nav ul {
+@media (max-width: 768px) {
+    nav {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 1em;
+        flex-direction: column;
     }
 
     nav li {
@@ -105,27 +184,10 @@ nav a {
     }
 
     #content {
-        flex-direction: column; /* Stack columns on mobile */
+        flex-direction: column;
     }
 
-    .column {
-        min-width: auto; /* Allow columns to take full width */
-    }
     .image-grid img {
-        width: 100%; /* Make images responsive on small screens */
+        width: 100%;
     }
 }
-
-/* Tablet */
-@media (min-width: 601px) and (max-width: 900px) {
-    /* Adjustments for tablet view if needed */
-    #content {
-        flex-direction: row; /* Keep columns side-by-side on tablet */
-    }
-    .image-grid img {
-        width: 45%; /* Adjust image size for tablet */
-    }
-
-}
-
-/* Desktop (Larger screens) - No specific changes needed for this example */
