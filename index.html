@@ -1,229 +1,81 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BusinessCo | Home</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1 class="logo">BusinessCo</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        &#9776;
-      </button>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero-section container">
-      <h2>Your Trusted Business Partner</h2>
-      <p>Delivering professional solutions to help your business grow.</p>
-      <a href="services.html" class="btn-primary">View Our Services</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="cosplay.html">Cosplay</a></li>
+            <li><a href="gaming.html">Gaming</a></li>
+        </ul>
+    </nav>
+
+<div id="container">
+<header>
+    <h1>My Hobbies</h1>
+</header>
+<main>
+    <section>
+        <h2>Content</h2>
+        <P>This is a space where I share things I'm most passionate about. From 
+            gaming and cosplaying to creating art and discovering new music, this site 
+            is a little window into what inspires me.</P>
     </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2024 BusinessCo. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Simple nav toggle for mobile
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-open');
-    });
-  </script>
-</body>
-</html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BusinessCo | About</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1 class="logo">BusinessCo</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        &#9776;
-      </button>
-    </div>
-  </header>
-
-  <main>
-    <section class="about-section container">
-      <h2>About BusinessCo</h2>
-      <p>Founded in 2010, BusinessCo has been providing top-notch services to clients worldwide.</p>
-      <div class="columns-2">
-        <div>
-          <h3>Our Mission</h3>
-          <p>To empower businesses with innovative and effective solutions.</p>
+    <section>
+        <div id="multi_col"> 
+            <div class="col col_text">
+                <h3>Additional content</h3>
+                <p>My hobbies are a big part of who I am. I like to spend time 
+             learning new things through creative activities. Gaming helps me think fast 
+             and stay focused, while cosplay lets me use imagination and detail to build something
+             unique. I also enjoy drawing and exploring different kinds of art styles.
+             Music is something I always have playing, and it helps me stay calm and inspired.</p>
+            </div>
+             <div class="col">
+            <img src="images/konstantin-dyadyun-UF2-gL3q-38-unsplash.jpg" alt="My Hobbies">
+            </div>
         </div>
-        <div>
-          <h3>Our Vision</h3>
-          <p>Creating value and making a difference in the business landscape.</p>
-        </div>
-      </div>
     </section>
-  </main>
+</main>
 
-  <footer>
-    <div class="container">
-      <p>© 2024 BusinessCo. All rights reserved.</p>
+<div id="lower_area">
+    <div class="column">
+        <h4>Art</h4>
+        <p>Art has always been something I love to do. I spend a lot of time drawing or
+            working on digital projects, just experimenting and seeing what I can create.
+            Sometimes I don't know exactly what I'm making until it comes together, and that's 
+            part of the fun. It's a way for me to relax, express myself, and play around with new ideas.</p>
+            <img src="images/Screenshot 2025-10-22 at 10.47.55 AM.png" alt="Hallow poster">
     </div>
-  </footer>
+     <div class="column">
+        <h4>Cosplay</h4>
+        <p>Cosplay is one of my favorite ways to bring characters to life. I like planning and making costumes,
+            figuring out how to recreate details, and trying out different looks. It can be challenging at times,
+            but I enjoy seeing everything come together. Cosplaying lets me be creative, have fun, and share my
+            love for characters with others
+        </p>
+            <img src="images/Media copy 3.jpeg" alt="Caustic Blackheart Mask">
+    </div>
+     <div class="column">
+        <h4>Gaming</h4>
+        <p>Gaming is one of my favorite ways to have fun and to challenge myself. I enjoy seeing new content with the games,
+            trying different strategies, and improving my skills in the games I play in. It's also a way to connect
+            with my friends and share experiences. Playing games keeps me focused, entertained, and always learning something
+            new.</p>
+            <img src="images/Caustic xbox banner.jpeg" alt="Caustic Xbox Banner">
+    </div>
+</div>
+<footer>&copy; 2025 My Hobbies</footer>
+</div>
 
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-open');
-    });
-  </script>
 </body>
-</html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BusinessCo | Services</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1 class="logo">BusinessCo</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        &#9776;
-      </button>
-    </div>
-  </header>
 
-  <main>
-    <section class="services-section container">
-      <h2>Our Services</h2>
-      <!-- 3 column layout -->
-      <div class="columns-3">
-        <article class="service-card">
-          <h3>Consulting</h3>
-          <p>Expert advice to optimize your business strategies and operations.</p>
-        </article>
-        <article class="service-card">
-          <h3>Technology Solutions</h3>
-          <p>Innovative IT solutions tailored to your company’s needs.</p>
-        </article>
-        <article class="service-card">
-          <h3>Support & Maintenance</h3>
-          <p>Reliable ongoing support to keep your business running smoothly.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2024 BusinessCo. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-open');
-    });
-  </script>
-</body>
-</html>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1 class="logo">BusinessCo</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        &#9776;
-      </button>
-    </div>
-  </header>
-
-  <main>
-    <section class="contact-section container">
-      <h2>Contact Us</h2>
-      <form class="contact-form" action="#" method="POST" novalidate>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2024 BusinessCo. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-open');
-    });
-  </script>
-</body>
 </html>
