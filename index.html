@@ -1,73 +1,43 @@
+<!-- page.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Responsive Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business Website - Images Section</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">BizCo</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button id="nav-toggle" aria-label="Toggle Navigation">☰</button>
+    </nav>
+  </header>
 
-    <header>
-        <nav>
-            <div class="logo">Your Logo</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main>
+    <section class="images-section">
+      <h2>Our Gallery</h2>
+      <div class="images-grid">
+        <img src="images/image1.jpg" alt="Image 1 description" />
+        <img src="images/image2.jpg" alt="Image 2 description" />
+        <img src="images/image3.jpg" alt="Image 3 description" />
+      </div>
+    </section>
+  </main>
 
-    <main>
-        <section id="hero">
-            <h1>Welcome</h1>
-            <p class="hero-text">We create beautiful and responsive websites.</p>
-            <a href="#" class="cta-button">Learn More</a>
-        </section>
-
-        <section id="content">
-            <div class="column">
-                <h2>Our Expertise</h2>
-                <p>We specialize in creating custom web solutions tailored to your specific needs. From e-commerce to informational websites, we've got you covered.</p>
-            </div>
-            <div class="column">
-                <h2>Our Approach</h2>
-                <p>We believe in a collaborative approach, working closely with our clients to understand their goals and deliver results that exceed expectations.</p>
-            </div>
-        </section>
-
-        <section id="images">
-            <h2>Portfolio</h2>
-            <div class="image-grid">
-                <img src="https://source.unsplash.com/600x400/?webdesign" alt="Web Design 1">
-                <img src="https://source.unsplash.com/600x400/?coding" alt="Web Design 2">
-                <img src="https://source.unsplash.com/600x400/?development" alt="Web Design 3">
-                <img src="https://source.unsplash.com/600x400/?ui" alt="Web Design 4">
-            </div>
-        </section>
-
-        <section id="hex-codes">
-            <h2>Color Palette</h2>
-            <div class="hex-code-example">
-                #2c3e50 (Dark Blue)
-            </div>
-            <div class="hex-code-example">
-                #3498db (Light Blue)
-            </div>
-            <div class="hex-code-example">
-                #e74c3c (Red)
-            </div>
-            <div class="hex-code-example">
-                #ecf0f1 (Light Gray)
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 My Company</p>
-    </footer>
-
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+    });
+  </script>
 </body>
 </html>
