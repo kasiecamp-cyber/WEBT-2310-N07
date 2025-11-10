@@ -1,131 +1,69 @@
+<!-- index.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Business Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business Website - Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Welcome to Our Business</h1>
-            <p>Explore our services and find out how we can help you.</p>
-            <div class="image-container">
-                <img src="images/image1.jpg" alt="Business Image 1">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Business Website</p>
-    </footer>
-</body>
-</html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>About Us</title>
-</head>
-<body>
-    <header>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>About Us</h1>
-            <p>Learn more about our business and our mission.</p>
-            <div class="image-container">
-                <img src="images/image2.jpg" alt="About Image">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Business Website</p>
-    </footer>
-</body>
-</html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Our Services</title>
-</head>
-<body>
-    <header>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="columns">
-            <div class="column">
-                <h2>Service 1</h2>
-                <p>Details about service 1.</p>
-            </div>
-            <div class="column">
-                <h2>Service 2</h2>
-                <p>Details about service 2.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Business Website</p>
-    </footer>
-</body>
-</html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Contact Us</title>
-</head>
-<body>
-    <header>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Contact Us</h1>
-            <p>Get in touch with us via the following methods.</p>
-            <div class="image-container">
-                <img src="images/image3.jpg" alt="Contact Image">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Business Website</p>
-    </footer>
+  <header>
+    <nav class="navbar">
+      <div class="logo">BizCo</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="nav-toggle" aria-label="Toggle Navigation">
+        ☰
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to BizCo</h1>
+      <p>Your partner in business success</p>
+      <img src="images/office1.jpg" alt="Business Office" />
+    </section>
+
+    <section class="content two-column">
+      <div>
+        <h2>Our Mission</h2>
+        <p>
+          We provide top-tier solutions to help your business reach its true potential. Customer focus and quality service are our top priorities.
+        </p>
+      </div>
+      <div>
+        <h2>Our Vision</h2>
+        <p>
+          To be the most trusted and innovative business partner worldwide, delivering sustainable growth and value.
+        </p>
+      </div>
+    </section>
+
+    <section class="images-row">
+      <img src="images/team.jpg" alt="Team Working" />
+      <img src="images/meeting.jpg" alt="Business Meeting" />
+      <img src="images/technology.jpg" alt="Technology" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 BizCo. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+    });
+  </script>
 </body>
 </html>
