@@ -50,3 +50,61 @@
   </script>
 </body>
 </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BusinessCo | About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">BusinessCo</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        &#9776;
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section container">
+      <h2>About BusinessCo</h2>
+      <p>Founded in 2010, BusinessCo has been providing top-notch services to clients worldwide.</p>
+      <div class="columns-2">
+        <div>
+          <h3>Our Mission</h3>
+          <p>To empower businesses with innovative and effective solutions.</p>
+        </div>
+        <div>
+          <h3>Our Vision</h3>
+          <p>Creating value and making a difference in the business landscape.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 BusinessCo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
